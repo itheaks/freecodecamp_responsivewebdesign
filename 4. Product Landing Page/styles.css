@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #ff7f96;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+  }
+  
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  h2, p {
+    margin: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  #page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .container {
+    flex-grow: 1;
+    padding: 2em;
+  }
+  
+  #header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+  }
+  
+  #header-img {
+    width: 150px;
+  }
+  
+  #nav-bar {
+    display: flex;
+  }
+  
+  .nav-link {
+    margin-right: 1em;
+  }
+  
+  #hero {
+    text-align: center;
+  }
+  
+  #form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+  }
+  
+  #email {
+    padding: 0.5em;
+  }
+  
+  #submit {
+    margin-left: 0.5em;
+    padding: 0.5em 1em;
+    background-color: #ffffff;
+    color: #ff7f50;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .section-heading {
+    text-align: center;
+    margin-bottom: 2em;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 2em;
+    margin-bottom: 2em;
+    align-items: center;
+  }
+  
+  .icon {
+    text-align: center;
+  }
+  
+  .desc {
+    text-align: justify;
+  }
+  
+  .product {
+    text-align: center;
+    margin-bottom: 2em;
+  }
+  
+  .level {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+  }
+  
+  ol {
+    text-align: left;
+    margin-left: 1em;
+  }
+  
+  .btn {
+    padding: 0.5em 1em;
+    background-color: #ffffff;
+    color: #ff7f50;
+    border: none;
+    cursor: pointer;
+  }
+  
+  footer {
+    background-color: #222222;
+    padding: 1em;
+    text-align: center;
+  }
+  
+  footer ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  footer ul li {
+    margin-right: 1em;
+  }
+  
+  footer ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  @media only screen and (max-width: 720px) {
+    /* Styles for smaller screens */
+    #header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1;
+      background-color: #ff7f50;
+    }
+  
+    #nav-bar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #ff7f50;
+      padding: 1em;
+    }
+  
+    .nav-link {
+      margin-bottom: 0.5em;
+    }
+  
+    .container {
+      padding: 1em;
+    }
+  }
+  
+  
+  

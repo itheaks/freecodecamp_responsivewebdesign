@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRATION</title>
+    <style>
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 15px 30px;
+            font-size: 20px;
+            padding: 5% 10%;
+            background-color: rgb(253, 152, 1);
+        }
+
+        .container {
+            background-color: aquamarine;
+            padding: 5px 15px 5px 15px;
+            border: 1px solid lightcyan;
+            border-radius: 5px;
+            width: 100%;
+            word-spacing: 1;
+        }
+
+        textarea,
+        .gender,
+        input[type="email"],
+        input[type="text"],
+        input[type="radio"],
+        input[type="email"],
+        input[type="number"],
+        input[type="date"],
+        input[type="password"],
+        #dropdown {
+            width: 100%;
+            border-radius: 4px;
+            padding: 4px;
+            border: 1px solid rgb(228, 186, 186);
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: rgb(255, 230, 0);
+            padding: 20px 25px;
+        }
+
+        .submit {
+            padding: 5px 20px;
+            background-color: lightblue;
+            border-radius: 4px;
+            border: 1px solid lightblue;
+            font-weight: bold;
+            cursor: crosshair;
+        }
+
+        .he {
+            background-color: brown;
+            padding: 15px 50px;
+            border-radius: 4cm;
+
+        }
+
+        #title {
+          font-weight: bold;
+        }
+        #description {
+          font-weight: bold;
+        }
+        #number{
+          font-weight:bold;
+        }
+        #name-label,#email-label,#number-label{
+          font-weight:bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="" id="survey-form">
+            <h1 class="he" id="title">WRITE YOUR DETAILS</h1>
+            <br>
+            <p>Name* :
+                <input type="text" name="name" required id="name" placeholder="Your Full Name">
+            </p>
+            <fieldset>
+                <legend id="survey-form">Gender*</legend>
+                <p class="gender" id="description">
+                    <input type="radio" name="gender" value=" * " required id="male">
+                    <label id="name-label" for="html">Male</label><br>
+                    <input type="radio" name="gender" value=" * " required id="female">
+                    <label id="email-label" for="html">Female</label><br>
+                    <input type="radio" name="gender" value=" * " required id="rather not to say">
+                    <label id="number-label" for="html">Rather Not To Say </label><br>
+                </p>
+            </fieldset>
+            <p>
+                Address*:
+                <textarea name="address" required id="address" cols="30" rows="5"
+                    placeholder="Enter Your Address"></textarea>
+            </p>
+            <p>
+              <input type="checkbox" name="vehicle1" value="Bike">
+  <label for="vehicle1"> I have a bike</label><br>
+  <input type="checkbox" name="vehicle2" value="Car">
+  <label for="vehicle2"> I have a car</label><br>
+  <input type="checkbox" name="vehicle3" value="Boat" checked>
+  <label for="vehicle3"> I have a boat</label><br><br>
+  <input type="submit" value="Submit">
+            </p>
+            <p>
+                Email*:
+                <input type="email" name="email" required id="email" placeholder="Ex. someone@xyz.com">
+            </p>
+            <p>
+                Pin Code*:
+                <input id="number" type="number" min="000000" max="999999"  name="pincode" required id="pincode" placeholder="Ex. 123456 ">
+            </p>
+            <br>
+            <input type="Reset" value="Reset">
+        </form>
+        <form action="" id="survey-form">
+            <h1 class="he" id="name">PAYMENT GATEWAY</h1>
+            <p>Card Type*:
+                <select name="card_type" id="dropdown">
+                    <option class="gender" value="">--SELECT PAYMENT METHOD--</option>
+                    <option value="VISA">VISA</option>
+                    <option value="RUPAY">RUPAY</option>
+                    <option value="MASTER CARD">MASTER CARD</option>
+                    <option value="OTHER">OTHER</option>
+                </select>
+            </p>
+            <p>
+                Card Number*
+                <input type="number" name="card_number" required id="card_number" placeholder="Ex. 1111-2222-3333-4444">
+            </p>
+            <p>
+                Expiry Date*:
+                <input type="date" name="exp_date" required id="exp_date" placeholder="Ex. 10/10/2000">
+            </p>
+            <p>
+                CVV*
+                <input type="password" name="cvv" required id="cvv" placeholder="Ex. 123">
+            </p>
+            <input type="Reset" value="Reset">
+        </form>
+        <form action="" id="survey-form">
+            <input id="submit" type="submit" value="PayNow">
+        </form>
+    </div>
+</body>
+
+</html>
